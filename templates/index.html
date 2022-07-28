@@ -1,0 +1,14 @@
+<html><body><center>
+    <h1>Enter Sign Image</h1>
+    <form method="POST">
+        <input type="file" name="my_image">
+        <input type="submit">
+    </form>
+
+    {% if prediction %}
+        <p>The letter is : {{prediction}}</p>
+    {% endif %}
+</center>
+
+</body>
+</html>
