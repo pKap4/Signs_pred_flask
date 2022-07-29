@@ -40,8 +40,8 @@ def index():
     request_type_str = request.method
     if request_type_str == 'GET':
         # Main page
-        return 
-    else:
+        return render_template('index.html')
+    elif request_type_str == 'POST':
         file_path = get_file_path_and_save(request)
         prediction = predict_label(file_path)
         return render_template('index.html', prediction = prediction)
