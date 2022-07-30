@@ -27,3 +27,4 @@ idna==2.10
 WTForms==2.3.3
 tensorflow==2.9.1
 h5py==3.7.0
+keras==2.9.0

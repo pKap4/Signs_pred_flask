@@ -1,11 +1,8 @@
 <center>
     <h1>Enter Sign Image</h1>
-    <form method="POST">
-        <input type="file" name="file">
-        <input type="submit">
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image">
+        <input type="submit" value="Upload">
     </form>
-
-    {% if prediction %}
-        <p>The letter is : {{prediction}}</p>
-    {% endif %}
+    <p>The letter is : {{prediction}}</p>
 </center>
